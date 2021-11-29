@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<header>
+		</header>
+
+		<main>
+			<div class="calculator">
+				<button type="submit" class="digit numberOne" value="1" onclick="getNumber1()">1</button>
+				<button type="submit" class="digit numberTwo" value="2" onclick="getNumber2()">2</button>
+				<button type="submit" class="digit numberThree" value="3" onclick="getNumber3()">3</button>
+				<button type="submit" class="digit numberFour" value="4" onclick="getNumber4()">4</button>
+				<button type="submit" class="digit numberFive" value="5" onclick="getNumber5()">5</button>
+				<button type="submit" class="digit numberSix" value="6" onclick="getNumber6()">6</button>
+				<button type="submit" class="digit numberSeven" value="7" onclick="getNumber7()">7</button>
+				<button type="submit" class="digit numberEight" value="8" onclick="getNumber8()">8</button>
+				<button type="submit" class="digit numberNine" value="9" onclick="getNumber9()">9</button>
+				<button type="submit" class="digit numberZero" value="0" onclick="getNumber0()">0</button>
+				<button type="submit" class="digit decimalPoint" value="." onclick="getDecimalPoint()">.</button>
+				<button type="text" class="visor" value="0"></button>
+				<button type="submit" class="operator" value="+" onclick="sum()">+</button>
+				<button type="submit" class="operator" value="-" onclick="subtraction()">-</button>
+				<button type="submit" class="operator" value="*" onclick="multiplication()">*</button>
+				<button type="submit" class="operator" value="=" onclick="equalSign()">=</button>
+				<button type="submit" class="operator" value="/" onclick="division()">/</button>
+				<button type="submit" class="deleteButton" value="C" onclick="deleteVisor()">C</button>
+			</div>
+		</main>
+
+		<footer>
+		</footer>
+
+		<script type="text/javascript" src="calculations.js"></script>
+	</body>
