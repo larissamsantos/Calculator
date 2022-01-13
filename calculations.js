@@ -70,25 +70,25 @@ function getDecimalPoint() {
 function sum() {
 	num1 = parseFloat(document.querySelector(".visor").value);
 	document.querySelector(".visor").value = "";
-	document.querySelector(".visor").textContent += num1;
+	//document.querySelector(".visor").textContent += num1;
 	operationString = "sum";
 }
 function subtraction() {
 	num1 = parseFloat(document.querySelector(".visor").value);
 	document.querySelector(".visor").value = "";
-	document.querySelector(".visor").textContent += num1;
+	//document.querySelector(".visor").textContent += num1;
 	operationString = "subtraction";
 }
 function multiplication() {
 	num1 = parseFloat(document.querySelector(".visor").value);
 	document.querySelector(".visor").value = "";
-	document.querySelector(".visor").textContent += num1;
+	//document.querySelector(".visor").textContent += num1;
 	operationString = "multiplication";
 }
 function division() {
 	num1 = document.querySelector(".visor").value;
 	document.querySelector(".visor").value = "";
-	document.querySelector(".visor").textContent += num1;
+	//document.querySelector(".visor").textContent += num1;
 	operationString = "division";
 }
 function equalSign() {
@@ -106,8 +106,10 @@ function equalSign() {
 		result = num1 / num2;
 	}
 	document.querySelector(".visor").value = result;
+	document.querySelector(".visor").textContent = result;
 }
 
 function deleteVisor() {
 	document.querySelector(".visor").value = "";
+	document.querySelector(".visor").textContent = "";
 }
